@@ -28,8 +28,9 @@ public class MessageController {
         while (range>0)
         {
             String message=Math.random() + " , " + Math.random();
+            System.out.println("Producer message-->"+message);
             messageService.updateLocation(message);
-            Thread.sleep(3000);
+            Thread.sleep(1000);
             range--;
         }
 
